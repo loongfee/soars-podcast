@@ -17,3 +17,8 @@ podcast:
   explicit: "no"
   language: zh-CN
   explicit: "no"
+
+# 添加插件支持
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
