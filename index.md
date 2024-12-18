@@ -10,3 +10,5 @@ title: Soars Science
 {% for post in site.posts %}
 * [{{ post.title }}]({{ post.url | prepend: site.baseurl }}) - {{ post.date | date: "%Y-%m-%d" }}
 {% endfor %}
+
+<a href="https://github.com/loongfee/soars-podcast" target="_blank">View on GitHub</a>

@@ -12,7 +12,7 @@ layout: null
       <title>{{ post.title }}</title>
       <description>{{ post.content }}</description>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-      <enclosure url="{{ site.url }}{{ post.file }}" 
+      <enclosure url="{{ post.file }}" 
                  length="{{ post.length }}"
                  type="{{ post.type }}"/>
       <itunes:duration>{{ post.duration }}</itunes:duration>
