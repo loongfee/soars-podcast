@@ -1,0 +1,15 @@
+title: Soars Science
+description: 学术播客
+url: https://loongfee.github.io/soars-podcast
+
+# RSS Feed 设置
+podcast:
+  title: Soars Science
+  description: 学术播客
+  url: https://loongfee.github.io/soars-podcast
+  author: Soars
+  email: loongfee@email.com
+  category: Technology
+  subcategory: Software
+  explicit: "no"
+  language: zh-CN

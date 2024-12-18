@@ -1,0 +1,22 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>{{ site.podcast.title }}</title>
+    <description>{{ site.podcast.description }}</description>
+    <link>{{ site.url }}</link>
+    {% for post in site.posts %}
+    <item>
+      <title>{{ post.title }}</title>
+      <description>{{ post.content }}</description>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <enclosure url="{{ site.url }}{{ post.file }}" 
+                 length="{{ post.length }}"
+                 type="{{ post.type }}"/>
+      <itunes:duration>{{ post.duration }}</itunes:duration>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
