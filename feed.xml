@@ -7,6 +7,7 @@ layout: null
     <title>{{ site.podcast.title }}</title>
     <description>{{ site.podcast.description }}</description>
     <link>{{ site.url }}</link>
+    <itunes:image href="{{ site.podcast.cover }}"/>
     {% for post in site.posts %}
     <item>
       <title>{{ post.title }}</title>
