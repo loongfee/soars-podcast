@@ -9,7 +9,7 @@ theme: minima  # 或其他支持的主题
 podcast:
   title: Soars Science
   description: 学术播客
-  cover: /assets/images/artificial-intelligence.png
+  cover: https://loongfee.github.io/soars-podcast/assets/images/artificial-intelligence.png
   url: https://loongfee.github.io/soars-podcast
   author: Soars
   email: loongfee@email.com
