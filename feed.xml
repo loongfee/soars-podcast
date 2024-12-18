@@ -16,6 +16,7 @@ layout: null
                  length="{{ post.length }}"
                  type="{{ post.type }}"/>
       <itunes:duration>{{ post.duration }}</itunes:duration>
+      <itunes:image href="{{ post.cover }}"/>
     </item>
     {% endfor %}
   </channel>
