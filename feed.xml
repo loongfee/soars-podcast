@@ -10,8 +10,7 @@ layout: null
     <itunes:image href="{{ site.podcast.cover }}"/>
     {% for post in site.posts %}
     <item>
-      <title>{{ post.title }} - {{ post.content | strip_html | truncate: 100 }}</title>
-      <!-- <description>{{ post.content }}</description> -->
+      <title>{{ post.title }} - {{ post.content | strip_html }}</title>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
       <enclosure url="{{ post.file }}" 
                  length="{{ post.length }}"
