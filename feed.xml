@@ -4,14 +4,14 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title>{{ post.title }} - {{ site.podcast.description | strip_html | truncate: 100 }}</title>
-    <!-- <description>{{ site.podcast.description }}</description> -->
+    <title>{{ post.title }} - {{ post.content | strip_html | truncate: 100 }}</title>
+    <description>{{ site.podcast.description }}</description>
     <link>{{ site.url }}</link>
     <itunes:image href="{{ site.podcast.cover }}"/>
     {% for post in site.posts %}
     <item>
-      <title>{{ post.title }}</title>
-      <description>{{ post.content }}</description>
+      <title>{{ post.title }} - {{ post.content | strip_html | truncate: 100 }}</title>
+      <!-- <description>{{ post.content }}</description> -->
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
       <enclosure url="{{ post.file }}" 
                  length="{{ post.length }}"
