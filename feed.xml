@@ -10,8 +10,8 @@ layout: null
     <itunes:image href="{{ site.podcast.cover }}"/>
     {% for post in site.posts %}
     <item>
-      <title>{{ post.title }}</title>
-      <description>{{ post.content }}</description>
+      <title><![CDATA[{{ post.title }}]]></title>
+      <description><![CDATA[{{ post.content }}]]></description>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
       <enclosure url="{{ post.file }}" 
                  length="{{ post.length }}"
