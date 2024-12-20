@@ -12,7 +12,8 @@
 
 ## 最新节目
 
-- [第一集 - SIF](https://loongfee.github.io/soars-podcast/podcast/2024/12/18/001-SIF.html) - 关于太阳诱导叶绿素荧光遥感的讨论
+{% assign latest_post = site.posts | sort: 'date' | last %}
+- [{{ latest_post.title }}]({{ latest_post.url }}) - {{ latest_post.description }}
 
 ## 收听方式
 
