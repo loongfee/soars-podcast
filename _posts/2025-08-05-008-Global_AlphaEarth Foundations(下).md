@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "第六集 - AlphaEarth Foundations（上）"
-date: 2024-12-31
+title: "第八集 - AlphaEarth Foundations（下）"
+date: 2025-08-05
 categories: podcast
-file: https://moguyun.ognai.com/api/shares/U0NTQ3N/files/a991d4f5-d407-408c-aeb1-20c20b9c00b9
+file: https://moguyun.ognai.com/api/shares/U0NTQ3N/files/ab6c6907-b5d3-4c68-90ed-56b62801791f
 length: 40433324  # 文件大小(bytes)
 duration: "14:02" # 时长
 type: audio/wav
-description: "AlphaEarth Foundations（上）"
-episode: 6
+description: "AlphaEarth Foundations（下）"
+episode: 8
 season: 1
 episodeType: full
 explicit: "no"
