@@ -66,10 +66,10 @@ def update_post_metadata(file_path):
             front_matter['duration'] = duration
             print("  Updated duration: {}".format(duration))
     else:
-        print(f"  Skipping - metadata already exists")
+        print("  Skipping - metadata already exists")
     
     # 重新写入文件
-    new_content = f"---\n{yaml.dump(front_matter, default_flow_style=False, allow_unicode=True)}---\n{post_content}"
+    new_content = "---\n{}---\n{}".format(yaml.dump(front_matter, default_flow_style=False, allow_unicode=True), post_content)
     
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
@@ -91,5 +91,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
