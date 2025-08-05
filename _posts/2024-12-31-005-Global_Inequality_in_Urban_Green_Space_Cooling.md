@@ -1,18 +1,18 @@
 ---
-layout: post
-title: "第五集 - 全球城市绿地降温效益显著但不平等"
-date: 2024-12-31
 categories: podcast
-file: https://moguyun.ognai.com/api/shares/MzNTE5O/files/c8d73475-5219-4d58-8a8f-6114eb3dfd93
-length: 40433324  # 文件大小(bytes)
-duration: "14:02" # 时长
-type: audio/wav
-description: "全球城市绿地降温效益显著但不平等"
+cover: https://loongfee.github.io/soars-podcast/assets/images/artificial-intelligence.png
+date: 2024-12-31
+description: 全球城市绿地降温效益显著但不平等
+duration: '14:02'
 episode: 5
-season: 1
 episodeType: full
-explicit: "no"
-cover: "https://loongfee.github.io/soars-podcast/assets/images/artificial-intelligence.png"
+explicit: 'no'
+file: https://moguyun.ognai.com/api/shares/MzNTE5O/files/c8d73475-5219-4d58-8a8f-6114eb3dfd93
+layout: post
+length: 40433324
+season: 1
+title: 第五集 - 全球城市绿地降温效益显著但不平等
+type: audio/wav
 ---
 
 ## 本集概要

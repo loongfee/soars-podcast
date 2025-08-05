@@ -1,18 +1,18 @@
 ---
-layout: post
-title: "第四集 - 植被物候对夜间人造光各向异性影响"
-date: 2024-12-30
 categories: podcast
-file: https://moguyun.ognai.com/api/shares/MxMzY3O/files/56272275-6fec-475e-a333-00b9c699980b
-length: 40433324  # 文件大小(bytes)
-duration: "14:02" # 时长
-type: audio/wav
-description: "植被物候对夜间人造光各向异性影响"
+cover: https://loongfee.github.io/soars-podcast/assets/images/artificial-intelligence.png
+date: 2024-12-30
+description: 植被物候对夜间人造光各向异性影响
+duration: '14:02'
 episode: 4
-season: 1
 episodeType: full
-explicit: "no"
-cover: "https://loongfee.github.io/soars-podcast/assets/images/artificial-intelligence.png"
+explicit: 'no'
+file: https://moguyun.ognai.com/api/shares/MxMzY3O/files/56272275-6fec-475e-a333-00b9c699980b
+layout: post
+length: 40433324
+season: 1
+title: 第四集 - 植被物候对夜间人造光各向异性影响
+type: audio/wav
 ---
 
 ## 本集概要

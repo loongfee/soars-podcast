@@ -1,18 +1,18 @@
 ---
-layout: post
-title: "第三集 - 哨兵2号冠层氮含量估算与制图优化"
-date: 2024-12-20
 categories: podcast
-file: https://moguyun.ognai.com/api/shares/Q4ODUyM/files/852b55cc-1878-421c-8ebc-aeaa6075b168
-length: 40433324  # 文件大小(bytes)
-duration: "14:02" # 时长
-type: audio/wav
-description: "哨兵2号冠层氮含量估算与制图优化"
+cover: https://loongfee.github.io/soars-podcast/assets/images/artificial-intelligence.png
+date: 2024-12-20
+description: 哨兵2号冠层氮含量估算与制图优化
+duration: '14:02'
 episode: 3
-season: 1
 episodeType: full
-explicit: "no"
-cover: "https://loongfee.github.io/soars-podcast/assets/images/artificial-intelligence.png"
+explicit: 'no'
+file: https://moguyun.ognai.com/api/shares/Q4ODUyM/files/852b55cc-1878-421c-8ebc-aeaa6075b168
+layout: post
+length: 40433324
+season: 1
+title: 第三集 - 哨兵2号冠层氮含量估算与制图优化
+type: audio/wav
 ---
 
 ## 本集概要

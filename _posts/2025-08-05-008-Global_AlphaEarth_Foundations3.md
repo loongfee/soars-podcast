@@ -1,18 +1,18 @@
 ---
-layout: post
-title: "第八集 - AlphaEarth Foundations（下）"
-date: 2025-08-05
 categories: podcast
-file: https://moguyun.ognai.com/api/shares/U0NTQ3N/files/ab6c6907-b5d3-4c68-90ed-56b62801791f
-length: 
-duration: 
-type: audio/wav
-description: "AlphaEarth Foundations（下）"
+cover: https://loongfee.github.io/soars-podcast/assets/images/artificial-intelligence.png
+date: 2025-08-05
+description: AlphaEarth Foundations（下）
+duration: null
 episode: 8
-season: 1
 episodeType: full
-explicit: "no"
-cover: "https://loongfee.github.io/soars-podcast/assets/images/artificial-intelligence.png"
+explicit: 'no'
+file: https://moguyun.ognai.com/api/shares/U0NTQ3N/files/ab6c6907-b5d3-4c68-90ed-56b62801791f
+layout: post
+length: null
+season: 1
+title: 第八集 - AlphaEarth Foundations（下）
+type: audio/wav
 ---
 
 ## 本集概要

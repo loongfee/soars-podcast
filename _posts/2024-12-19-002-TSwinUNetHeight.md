@@ -1,18 +1,18 @@
 ---
-layout: post
-title: "第二集 - 基于Sentinel数据的建筑物高度估测：T-SwinUNet模型"
-date: 2024-12-19
 categories: podcast
-file: https://moguyun.ognai.com/api/shares/Y1OTQ0N/files/3f9d8bbe-67ca-4c87-b6d9-8ba0a3f57941
-length: 53765804  # 文件大小(bytes)
-duration: "18:40" # 时长
-type: audio/wav
-description: "基于Sentinel数据的建筑物高度估测：T-SwinUNet模型"
+cover: https://loongfee.github.io/soars-podcast/assets/images/artificial-intelligence.png
+date: 2024-12-19
+description: 基于Sentinel数据的建筑物高度估测：T-SwinUNet模型
+duration: '18:40'
 episode: 2
-season: 1
 episodeType: full
-explicit: "no"
-cover: "https://loongfee.github.io/soars-podcast/assets/images/artificial-intelligence.png"
+explicit: 'no'
+file: https://moguyun.ognai.com/api/shares/Y1OTQ0N/files/3f9d8bbe-67ca-4c87-b6d9-8ba0a3f57941
+layout: post
+length: 53765804
+season: 1
+title: 第二集 - 基于Sentinel数据的建筑物高度估测：T-SwinUNet模型
+type: audio/wav
 ---
 
 # 基于Sentinel数据的建筑物高度估测：T-SwinUNet模型

@@ -1,18 +1,18 @@
 ---
-layout: post
-title: "第六集 - AlphaEarth Foundations（上）"
-date: 2025-08-05
 categories: podcast
-file: https://moguyun.ognai.com/api/shares/U0NTQ3N/files/a991d4f5-d407-408c-aeb1-20c20b9c00b9
-length: 
-duration: 
-type: audio/wav
-description: "AlphaEarth Foundations（上）"
+cover: https://loongfee.github.io/soars-podcast/assets/images/artificial-intelligence.png
+date: 2025-08-05
+description: AlphaEarth Foundations（上）
+duration: null
 episode: 6
-season: 1
 episodeType: full
-explicit: "no"
-cover: "https://loongfee.github.io/soars-podcast/assets/images/artificial-intelligence.png"
+explicit: 'no'
+file: https://moguyun.ognai.com/api/shares/U0NTQ3N/files/a991d4f5-d407-408c-aeb1-20c20b9c00b9
+layout: post
+length: null
+season: 1
+title: 第六集 - AlphaEarth Foundations（上）
+type: audio/wav
 ---
 
 ## 本集概要
