@@ -68,8 +68,11 @@ bundle exec jekyll serve
 
 ## 更新日志
 
-### 2024-12-18
-- 发布第一集：SIF - 太阳诱导叶绿素荧光遥感
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+{% for post in sorted_posts limit: 5 %}
+### {{ post.date | date: "%Y-%m-%d" }}
+- 发布{{ post.title }}：{{ post.description }}
+{% endfor %}
 
 ## 致谢
 
