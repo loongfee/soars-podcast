@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.2"
+gem "minima", "~> 2.5"
 
 group :jekyll_plugins do
   gem "jekyll-timeago", "~> 0.13.1"
@@ -12,10 +13,3 @@ end
 # gem "github-pages", group: :jekyll_plugins
 
 ruby "3.3.4"
-
-platforms :mingw, :x64_mingw, :mswin do
-  gem "tzinfo", "~> 1.2"
-  gem "tzinfo-data"
-end
-
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
