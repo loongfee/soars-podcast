@@ -4,8 +4,8 @@ title: "第七集 - AlphaEarth Foundations（中）"
 date: 2025-08-05
 categories: podcast
 file: https://moguyun.ognai.com/api/shares/U0NTQ3N/files/78cb217b-789f-46d6-92de-23a882f663ae
-length: 40433324  # 文件大小(bytes)
-duration: "14:02" # 时长
+length: 
+duration: 
 type: audio/wav
 description: "AlphaEarth Foundations（中）"
 episode: 7
