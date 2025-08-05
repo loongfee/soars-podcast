@@ -15,18 +15,26 @@ def get_audio_metadata(url):
         file_size = int(response.headers.get('content-length', 0))
         
         # 下载完整文件来获取时长（临时文件）
-        with tempfile.NamedTemporaryFile() as temp_file:
+        with tempfile.NamedTemporaryFile(delete=False) as temp_file:
             response = requests.get(url, timeout=30)
             temp_file.write(response.content)
             temp_file.flush()
+            temp_file_path = temp_file.name
             
+        try:
             # 使用 mutagen 获取音频时长
-            audio_file = File(temp_file.name)
+            audio_file = File(temp_file_path)
             if audio_file and audio_file.info:
                 duration_seconds = int(audio_file.info.length)
                 duration_formatted = "{}:{:02d}".format(duration_seconds // 60, duration_seconds % 60)
                 return file_size, duration_formatted
-            
+        finally:
+            # 手动删除临时文件
+            try:
+                os.unlink(temp_file_path)
+            except:
+                pass
+        
         return file_size, None
         
     except Exception as e:
@@ -91,6 +99,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 

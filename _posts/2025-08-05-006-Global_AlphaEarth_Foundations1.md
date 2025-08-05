@@ -9,7 +9,7 @@ episodeType: full
 explicit: 'no'
 file: https://moguyun.ognai.com/api/shares/U0NTQ3N/files/a991d4f5-d407-408c-aeb1-20c20b9c00b9
 layout: post
-length: null
+length: 21861690
 season: 1
 title: 第六集 - AlphaEarth Foundations（上）
 type: audio/wav

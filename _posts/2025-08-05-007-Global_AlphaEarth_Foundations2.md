@@ -9,7 +9,7 @@ episodeType: full
 explicit: 'no'
 file: https://moguyun.ognai.com/api/shares/U0NTQ3N/files/78cb217b-789f-46d6-92de-23a882f663ae
 layout: post
-length: null
+length: 118619564
 season: 1
 title: 第七集 - AlphaEarth Foundations（中）
 type: audio/wav
