@@ -24,13 +24,13 @@ def get_audio_metadata(url):
             audio_file = File(temp_file.name)
             if audio_file and audio_file.info:
                 duration_seconds = int(audio_file.info.length)
-                duration_formatted = f"{duration_seconds // 60}:{duration_seconds % 60:02d}"
+                duration_formatted = "{}:{:02d}".format(duration_seconds // 60, duration_seconds % 60)
                 return file_size, duration_formatted
             
         return file_size, None
         
     except Exception as e:
-        print(f"Error processing {url}: {e}")
+        print("Error processing {}: {}".format(url, e))
         return None, None
 
 def update_post_metadata(file_path):
@@ -49,7 +49,7 @@ def update_post_metadata(file_path):
     if 'file' not in front_matter:
         return False
     
-    print(f"Processing: {front_matter.get('title', 'Unknown')}")
+    print("Processing: {}".format(front_matter.get('title', 'Unknown')))
     
     # 获取音频元数据 - 只在字段不存在或为空时更新
     needs_length = 'length' not in front_matter or not front_matter['length']
@@ -60,11 +60,11 @@ def update_post_metadata(file_path):
         
         if file_size and needs_length:
             front_matter['length'] = file_size
-            print(f"  Updated length: {file_size}")
+            print("  Updated length: {}".format(file_size))
         
         if duration and needs_duration:
             front_matter['duration'] = duration
-            print(f"  Updated duration: {duration}")
+            print("  Updated duration: {}".format(duration))
     else:
         print(f"  Skipping - metadata already exists")
     
@@ -91,3 +91,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
