@@ -3,7 +3,7 @@ categories: podcast
 cover: https://loongfee.github.io/soars-podcast/assets/images/artificial-intelligence.png
 date: 2025-08-05
 description: AlphaEarth Foundations（下）
-duration: null
+duration: '56:10'
 episode: 8
 episodeType: full
 explicit: 'no'

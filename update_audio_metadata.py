@@ -3,9 +3,9 @@
 import os
 import re
 import requests
-from mutagen import File
 import tempfile
 import yaml
+import wave
 
 def get_audio_metadata(url):
     """获取音频文件的元数据"""
@@ -13,21 +13,30 @@ def get_audio_metadata(url):
         # 下载文件头部来获取基本信息
         response = requests.head(url, timeout=10)
         file_size = int(response.headers.get('content-length', 0))
+        print("  File size: {} bytes".format(file_size))
         
         # 下载完整文件来获取时长（临时文件）
-        with tempfile.NamedTemporaryFile(delete=False) as temp_file:
-            response = requests.get(url, timeout=30)
+        print("  Downloading audio file...")
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.wav') as temp_file:
+            response = requests.get(url, timeout=60)
             temp_file.write(response.content)
             temp_file.flush()
             temp_file_path = temp_file.name
             
         try:
-            # 使用 mutagen 获取音频时长
-            audio_file = File(temp_file_path)
-            if audio_file and audio_file.info:
-                duration_seconds = int(audio_file.info.length)
+            # 使用 wave 模块获取音频时长
+            print("  Analyzing WAV file...")
+            with wave.open(temp_file_path, 'rb') as wav_file:
+                frames = wav_file.getnframes()
+                sample_rate = wav_file.getframerate()
+                duration_seconds = int(frames / sample_rate)
                 duration_formatted = "{}:{:02d}".format(duration_seconds // 60, duration_seconds % 60)
+                print("  Duration: {}".format(duration_formatted))
                 return file_size, duration_formatted
+                
+        except Exception as e:
+            print("  Error reading WAV file: {}".format(e))
+            
         finally:
             # 手动删除临时文件
             try:
@@ -77,7 +86,7 @@ def update_post_metadata(file_path):
         print("  Skipping - metadata already exists")
     
     # 重新写入文件
-    new_content = "---\n{}---\n{}".format(yaml.dump(front_matter, default_flow_style=False, allow_unicode=True), post_content)
+    new_content = "---\n{}---\n{}".format(yaml.dump(front_matter, default_flow_style=False, allow_unicode=True, default_style=None), post_content)
     
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
@@ -99,6 +108,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
 
 
 
