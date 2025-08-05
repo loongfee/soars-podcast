@@ -50,16 +50,22 @@ def update_post_metadata(file_path):
     
     print(f"Processing: {front_matter.get('title', 'Unknown')}")
     
-    # 获取音频元数据
-    file_size, duration = get_audio_metadata(front_matter['file'])
+    # 获取音频元数据 - 只在字段不存在或为空时更新
+    needs_length = 'length' not in front_matter or not front_matter['length']
+    needs_duration = 'duration' not in front_matter or not front_matter['duration']
     
-    if file_size:
-        front_matter['length'] = file_size
-        print(f"  Updated length: {file_size}")
-    
-    if duration:
-        front_matter['duration'] = duration
-        print(f"  Updated duration: {duration}")
+    if needs_length or needs_duration:
+        file_size, duration = get_audio_metadata(front_matter['file'])
+        
+        if file_size and needs_length:
+            front_matter['length'] = file_size
+            print(f"  Updated length: {file_size}")
+        
+        if duration and needs_duration:
+            front_matter['duration'] = duration
+            print(f"  Updated duration: {duration}")
+    else:
+        print(f"  Skipping - metadata already exists")
     
     # 重新写入文件
     new_content = f"---\n{yaml.dump(front_matter, default_flow_style=False, allow_unicode=True)}---\n{post_content}"
